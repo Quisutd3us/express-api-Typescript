@@ -4,10 +4,12 @@ const app = express();
 const PORT =3000;
 
 app.get('/',(req, res)=>{
-    res.json({
-      res: true,
-      msg: "Every OK!!",
-    });
+
+    res.status(201).json({
+      res:true,
+      msg:'New id: David'
+    })
+   
 });
 
 app.listen(PORT,()=>{
